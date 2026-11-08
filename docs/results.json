@@ -1,0 +1,942 @@
+{
+ "primary_winter": "2017/18",
+ "winters": {
+  "2017/18": [
+   "2017-11-01",
+   "2018-04-30"
+  ],
+  "2018/19": [
+   "2018-11-01",
+   "2019-04-30"
+  ],
+  "2020/21": [
+   "2020-11-01",
+   "2021-04-30"
+  ]
+ },
+ "stations": {
+  "PIO": {
+   "name": "Piotta",
+   "altitude_m": 990.0
+  },
+  "ENG": {
+   "name": "Engelberg",
+   "altitude_m": 1036.0
+  },
+  "ULR": {
+   "name": "Ulrichen",
+   "altitude_m": 1346.0
+  },
+  "DAV": {
+   "name": "Davos",
+   "altitude_m": 1594.0
+  },
+  "GRH": {
+   "name": "Grimsel Hospiz",
+   "altitude_m": 1980.0
+  }
+ },
+ "summary": [
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "altitude_m": 990.0,
+   "design_kn_m2": 2.88,
+   "max_hs_cm": 99.0,
+   "max_load_kn_m2": 1.97,
+   "max_util": 0.683,
+   "peak_day": "2018-02-16",
+   "valid_days": 181,
+   "alert_events": 2,
+   "days_ge_50": 53,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "PIO",
+   "winter": "2018/19",
+   "altitude_m": 990.0,
+   "design_kn_m2": 2.88,
+   "max_hs_cm": 30.0,
+   "max_load_kn_m2": 0.31,
+   "max_util": 0.106,
+   "peak_day": "2019-02-11",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "PIO",
+   "winter": "2020/21",
+   "altitude_m": 990.0,
+   "design_kn_m2": 2.88,
+   "max_hs_cm": 118.0,
+   "max_load_kn_m2": 2.18,
+   "max_util": 0.758,
+   "peak_day": "2021-01-28",
+   "valid_days": 181,
+   "alert_events": 4,
+   "days_ge_50": 45,
+   "days_ge_70": 19,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "altitude_m": 1036.0,
+   "design_kn_m2": 3.12,
+   "max_hs_cm": 46.0,
+   "max_load_kn_m2": 0.49,
+   "max_util": 0.156,
+   "peak_day": "2017-12-30",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ENG",
+   "winter": "2018/19",
+   "altitude_m": 1036.0,
+   "design_kn_m2": 3.12,
+   "max_hs_cm": 85.0,
+   "max_load_kn_m2": 1.17,
+   "max_util": 0.376,
+   "peak_day": "2019-02-12",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ENG",
+   "winter": "2020/21",
+   "altitude_m": 1036.0,
+   "design_kn_m2": 3.12,
+   "max_hs_cm": 81.0,
+   "max_load_kn_m2": 1.33,
+   "max_util": 0.425,
+   "peak_day": "2021-01-28",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "altitude_m": 1346.0,
+   "design_kn_m2": 5.05,
+   "max_hs_cm": 206.0,
+   "max_load_kn_m2": 4.86,
+   "max_util": 0.963,
+   "peak_day": "2018-03-31",
+   "valid_days": 181,
+   "alert_events": 6,
+   "days_ge_50": 92,
+   "days_ge_70": 68,
+   "days_ge_90": 7
+  },
+  {
+   "station": "ULR",
+   "winter": "2018/19",
+   "altitude_m": 1346.0,
+   "design_kn_m2": 5.05,
+   "max_hs_cm": 132.0,
+   "max_load_kn_m2": 3.0,
+   "max_util": 0.594,
+   "peak_day": "2019-03-15",
+   "valid_days": 181,
+   "alert_events": 2,
+   "days_ge_50": 14,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ULR",
+   "winter": "2020/21",
+   "altitude_m": 1346.0,
+   "design_kn_m2": 5.05,
+   "max_hs_cm": 195.0,
+   "max_load_kn_m2": 3.44,
+   "max_util": 0.681,
+   "peak_day": "2021-03-16",
+   "valid_days": 181,
+   "alert_events": 2,
+   "days_ge_50": 66,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "altitude_m": 1594.0,
+   "design_kn_m2": 6.96,
+   "max_hs_cm": 170.0,
+   "max_load_kn_m2": 3.01,
+   "max_util": 0.433,
+   "peak_day": "2018-03-29",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "DAV",
+   "winter": "2018/19",
+   "altitude_m": 1594.0,
+   "design_kn_m2": 6.96,
+   "max_hs_cm": 146.0,
+   "max_load_kn_m2": 2.96,
+   "max_util": 0.425,
+   "peak_day": "2019-03-16",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "DAV",
+   "winter": "2020/21",
+   "altitude_m": 1594.0,
+   "design_kn_m2": 6.96,
+   "max_hs_cm": 135.0,
+   "max_load_kn_m2": 2.63,
+   "max_util": 0.378,
+   "peak_day": "2021-03-22",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "altitude_m": 1980.0,
+   "design_kn_m2": 10.56,
+   "max_hs_cm": 430.0,
+   "max_load_kn_m2": 10.24,
+   "max_util": 0.969,
+   "peak_day": "2018-04-13",
+   "valid_days": 181,
+   "alert_events": 4,
+   "days_ge_50": 99,
+   "days_ge_70": 68,
+   "days_ge_90": 26
+  },
+  {
+   "station": "GRH",
+   "winter": "2018/19",
+   "altitude_m": 1980.0,
+   "design_kn_m2": 10.56,
+   "max_hs_cm": 325.0,
+   "max_load_kn_m2": 6.82,
+   "max_util": 0.646,
+   "peak_day": "2019-04-17",
+   "valid_days": 181,
+   "alert_events": 1,
+   "days_ge_50": 46,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "GRH",
+   "winter": "2020/21",
+   "altitude_m": 1980.0,
+   "design_kn_m2": 10.56,
+   "max_hs_cm": 378.0,
+   "max_load_kn_m2": 8.35,
+   "max_util": 0.791,
+   "peak_day": "2021-04-22",
+   "valid_days": 181,
+   "alert_events": 2,
+   "days_ge_50": 86,
+   "days_ge_70": 44,
+   "days_ge_90": 0
+  }
+ ],
+ "summary_conservative_sturm": [
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "altitude_m": 990.0,
+   "design_kn_m2": 2.88,
+   "max_hs_cm": 99.0,
+   "max_load_kn_m2": 2.88,
+   "max_util": 0.999,
+   "peak_day": "2018-01-22",
+   "valid_days": 181,
+   "alert_events": 16,
+   "days_ge_50": 81,
+   "days_ge_70": 50,
+   "days_ge_90": 4
+  },
+  {
+   "station": "PIO",
+   "winter": "2018/19",
+   "altitude_m": 990.0,
+   "design_kn_m2": 2.88,
+   "max_hs_cm": 30.0,
+   "max_load_kn_m2": 0.88,
+   "max_util": 0.304,
+   "peak_day": "2019-02-02",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "PIO",
+   "winter": "2020/21",
+   "altitude_m": 990.0,
+   "design_kn_m2": 2.88,
+   "max_hs_cm": 118.0,
+   "max_load_kn_m2": 3.62,
+   "max_util": 1.257,
+   "peak_day": "2021-01-28",
+   "valid_days": 181,
+   "alert_events": 12,
+   "days_ge_50": 75,
+   "days_ge_70": 39,
+   "days_ge_90": 5
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "altitude_m": 1036.0,
+   "design_kn_m2": 3.12,
+   "max_hs_cm": 46.0,
+   "max_load_kn_m2": 1.21,
+   "max_util": 0.386,
+   "peak_day": "2017-12-17",
+   "valid_days": 181,
+   "alert_events": 0,
+   "days_ge_50": 0,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ENG",
+   "winter": "2018/19",
+   "altitude_m": 1036.0,
+   "design_kn_m2": 3.12,
+   "max_hs_cm": 85.0,
+   "max_load_kn_m2": 2.59,
+   "max_util": 0.829,
+   "peak_day": "2019-02-04",
+   "valid_days": 181,
+   "alert_events": 8,
+   "days_ge_50": 17,
+   "days_ge_70": 4,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ENG",
+   "winter": "2020/21",
+   "altitude_m": 1036.0,
+   "design_kn_m2": 3.12,
+   "max_hs_cm": 81.0,
+   "max_load_kn_m2": 2.55,
+   "max_util": 0.816,
+   "peak_day": "2021-01-28",
+   "valid_days": 181,
+   "alert_events": 8,
+   "days_ge_50": 16,
+   "days_ge_70": 2,
+   "days_ge_90": 0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "altitude_m": 1346.0,
+   "design_kn_m2": 5.05,
+   "max_hs_cm": 206.0,
+   "max_load_kn_m2": 6.73,
+   "max_util": 1.332,
+   "peak_day": "2018-03-31",
+   "valid_days": 181,
+   "alert_events": 8,
+   "days_ge_50": 113,
+   "days_ge_70": 90,
+   "days_ge_90": 83
+  },
+  {
+   "station": "ULR",
+   "winter": "2018/19",
+   "altitude_m": 1346.0,
+   "design_kn_m2": 5.05,
+   "max_hs_cm": 132.0,
+   "max_load_kn_m2": 4.56,
+   "max_util": 0.902,
+   "peak_day": "2019-03-15",
+   "valid_days": 181,
+   "alert_events": 11,
+   "days_ge_50": 81,
+   "days_ge_70": 5,
+   "days_ge_90": 1
+  },
+  {
+   "station": "ULR",
+   "winter": "2020/21",
+   "altitude_m": 1346.0,
+   "design_kn_m2": 5.05,
+   "max_hs_cm": 195.0,
+   "max_load_kn_m2": 6.26,
+   "max_util": 1.24,
+   "peak_day": "2021-01-28",
+   "valid_days": 181,
+   "alert_events": 12,
+   "days_ge_50": 81,
+   "days_ge_70": 57,
+   "days_ge_90": 12
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "altitude_m": 1594.0,
+   "design_kn_m2": 6.96,
+   "max_hs_cm": 170.0,
+   "max_load_kn_m2": 5.32,
+   "max_util": 0.765,
+   "peak_day": "2018-01-22",
+   "valid_days": 181,
+   "alert_events": 4,
+   "days_ge_50": 51,
+   "days_ge_70": 2,
+   "days_ge_90": 0
+  },
+  {
+   "station": "DAV",
+   "winter": "2018/19",
+   "altitude_m": 1594.0,
+   "design_kn_m2": 6.96,
+   "max_hs_cm": 146.0,
+   "max_load_kn_m2": 4.61,
+   "max_util": 0.663,
+   "peak_day": "2019-03-16",
+   "valid_days": 181,
+   "alert_events": 8,
+   "days_ge_50": 13,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "DAV",
+   "winter": "2020/21",
+   "altitude_m": 1594.0,
+   "design_kn_m2": 6.96,
+   "max_hs_cm": 135.0,
+   "max_load_kn_m2": 4.2,
+   "max_util": 0.604,
+   "peak_day": "2021-01-30",
+   "valid_days": 170,
+   "alert_events": 6,
+   "days_ge_50": 15,
+   "days_ge_70": 0,
+   "days_ge_90": 0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "altitude_m": 1980.0,
+   "design_kn_m2": 10.56,
+   "max_hs_cm": 430.0,
+   "max_load_kn_m2": 16.38,
+   "max_util": 1.551,
+   "peak_day": "2018-03-31",
+   "valid_days": 181,
+   "alert_events": 3,
+   "days_ge_50": 122,
+   "days_ge_70": 112,
+   "days_ge_90": 94
+  },
+  {
+   "station": "GRH",
+   "winter": "2018/19",
+   "altitude_m": 1980.0,
+   "design_kn_m2": 10.56,
+   "max_hs_cm": 325.0,
+   "max_load_kn_m2": 12.06,
+   "max_util": 1.142,
+   "peak_day": "2019-04-05",
+   "valid_days": 181,
+   "alert_events": 4,
+   "days_ge_50": 102,
+   "days_ge_70": 42,
+   "days_ge_90": 12
+  },
+  {
+   "station": "GRH",
+   "winter": "2020/21",
+   "altitude_m": 1980.0,
+   "design_kn_m2": 10.56,
+   "max_hs_cm": 378.0,
+   "max_load_kn_m2": 14.0,
+   "max_util": 1.326,
+   "peak_day": "2021-03-18",
+   "valid_days": 181,
+   "alert_events": 4,
+   "days_ge_50": 106,
+   "days_ge_70": 93,
+   "days_ge_90": 61
+  }
+ ],
+ "sensitivity_primary": [
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "model": "sturm",
+   "max_swe_mm": 362.0,
+   "max_load_kn_m2": 2.88,
+   "max_util": 0.999,
+   "days_ge_70": 50,
+   "mean_rho_kg_m3": 374.0
+  },
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "model": "layered",
+   "max_swe_mm": 251.0,
+   "max_load_kn_m2": 1.97,
+   "max_util": 0.683,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 277.0
+  },
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "model": "mass_balance",
+   "max_swe_mm": 145.0,
+   "max_load_kn_m2": 1.2,
+   "max_util": 0.416,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 145.0
+  },
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "model": "constant 200",
+   "max_swe_mm": 198.0,
+   "max_load_kn_m2": 1.55,
+   "max_util": 0.54,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 200.0
+  },
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "model": "constant 300",
+   "max_swe_mm": 297.0,
+   "max_load_kn_m2": 2.33,
+   "max_util": 0.809,
+   "days_ge_70": 4,
+   "mean_rho_kg_m3": 300.0
+  },
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "model": "constant 400",
+   "max_swe_mm": 396.0,
+   "max_load_kn_m2": 3.11,
+   "max_util": 1.079,
+   "days_ge_70": 56,
+   "mean_rho_kg_m3": 400.0
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "model": "sturm",
+   "max_swe_mm": 153.0,
+   "max_load_kn_m2": 1.21,
+   "max_util": 0.386,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 350.0
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "model": "layered",
+   "max_swe_mm": 59.0,
+   "max_load_kn_m2": 0.49,
+   "max_util": 0.156,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 162.0
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "model": "mass_balance",
+   "max_swe_mm": 63.0,
+   "max_load_kn_m2": 0.49,
+   "max_util": 0.158,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 166.0
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "model": "constant 200",
+   "max_swe_mm": 92.0,
+   "max_load_kn_m2": 0.72,
+   "max_util": 0.231,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 200.0
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "model": "constant 300",
+   "max_swe_mm": 138.0,
+   "max_load_kn_m2": 1.08,
+   "max_util": 0.347,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 300.0
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "model": "constant 400",
+   "max_swe_mm": 184.0,
+   "max_load_kn_m2": 1.45,
+   "max_util": 0.463,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 400.0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "model": "sturm",
+   "max_swe_mm": 856.0,
+   "max_load_kn_m2": 6.73,
+   "max_util": 1.332,
+   "days_ge_70": 90,
+   "mean_rho_kg_m3": 387.0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "model": "layered",
+   "max_swe_mm": 618.0,
+   "max_load_kn_m2": 4.86,
+   "max_util": 0.963,
+   "days_ge_70": 68,
+   "mean_rho_kg_m3": 274.0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "model": "mass_balance",
+   "max_swe_mm": 652.0,
+   "max_load_kn_m2": 5.13,
+   "max_util": 1.014,
+   "days_ge_70": 88,
+   "mean_rho_kg_m3": 320.0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "model": "constant 200",
+   "max_swe_mm": 412.0,
+   "max_load_kn_m2": 3.23,
+   "max_util": 0.64,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 200.0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "model": "constant 300",
+   "max_swe_mm": 618.0,
+   "max_load_kn_m2": 4.85,
+   "max_util": 0.96,
+   "days_ge_70": 71,
+   "mean_rho_kg_m3": 300.0
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "model": "constant 400",
+   "max_swe_mm": 824.0,
+   "max_load_kn_m2": 6.47,
+   "max_util": 1.28,
+   "days_ge_70": 89,
+   "mean_rho_kg_m3": 400.0
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "model": "sturm",
+   "max_swe_mm": 678.0,
+   "max_load_kn_m2": 5.32,
+   "max_util": 0.765,
+   "days_ge_70": 2,
+   "mean_rho_kg_m3": 374.0
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "model": "layered",
+   "max_swe_mm": 382.0,
+   "max_load_kn_m2": 3.01,
+   "max_util": 0.433,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 262.0
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "model": "mass_balance",
+   "max_swe_mm": 365.0,
+   "max_load_kn_m2": 2.86,
+   "max_util": 0.412,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 232.0
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "model": "constant 200",
+   "max_swe_mm": 340.0,
+   "max_load_kn_m2": 2.67,
+   "max_util": 0.384,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 200.0
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "model": "constant 300",
+   "max_swe_mm": 510.0,
+   "max_load_kn_m2": 4.0,
+   "max_util": 0.575,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 300.0
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "model": "constant 400",
+   "max_swe_mm": 680.0,
+   "max_load_kn_m2": 5.34,
+   "max_util": 0.767,
+   "days_ge_70": 2,
+   "mean_rho_kg_m3": 400.0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "model": "sturm",
+   "max_swe_mm": 2087.0,
+   "max_load_kn_m2": 16.38,
+   "max_util": 1.551,
+   "days_ge_70": 112,
+   "mean_rho_kg_m3": 408.0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "model": "layered",
+   "max_swe_mm": 1304.0,
+   "max_load_kn_m2": 10.24,
+   "max_util": 0.969,
+   "days_ge_70": 68,
+   "mean_rho_kg_m3": 263.0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "model": "mass_balance",
+   "max_swe_mm": 1253.0,
+   "max_load_kn_m2": 9.83,
+   "max_util": 0.931,
+   "days_ge_70": 71,
+   "mean_rho_kg_m3": 296.0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "model": "constant 200",
+   "max_swe_mm": 860.0,
+   "max_load_kn_m2": 6.75,
+   "max_util": 0.639,
+   "days_ge_70": 0,
+   "mean_rho_kg_m3": 200.0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "model": "constant 300",
+   "max_swe_mm": 1290.0,
+   "max_load_kn_m2": 10.12,
+   "max_util": 0.959,
+   "days_ge_70": 46,
+   "mean_rho_kg_m3": 300.0
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "model": "constant 400",
+   "max_swe_mm": 1720.0,
+   "max_load_kn_m2": 13.5,
+   "max_util": 1.278,
+   "days_ge_70": 111,
+   "mean_rho_kg_m3": 400.0
+  }
+ ],
+ "crosscheck": [
+  {
+   "station": "PIO",
+   "winter": "2017/18",
+   "days": 105,
+   "bias_pct": -46.4,
+   "rmse_mm": 93.0,
+   "corr": 0.503
+  },
+  {
+   "station": "PIO",
+   "winter": "2018/19",
+   "days": 20,
+   "bias_pct": -32.5,
+   "rmse_mm": 12.0,
+   "corr": 0.737
+  },
+  {
+   "station": "PIO",
+   "winter": "2020/21",
+   "days": 90,
+   "bias_pct": -50.5,
+   "rmse_mm": 110.0,
+   "corr": 0.327
+  },
+  {
+   "station": "ENG",
+   "winter": "2017/18",
+   "days": 64,
+   "bias_pct": -4.2,
+   "rmse_mm": 17.0,
+   "corr": 0.351
+  },
+  {
+   "station": "ENG",
+   "winter": "2018/19",
+   "days": 61,
+   "bias_pct": -26.0,
+   "rmse_mm": 53.0,
+   "corr": 0.307
+  },
+  {
+   "station": "ENG",
+   "winter": "2020/21",
+   "days": 97,
+   "bias_pct": -39.8,
+   "rmse_mm": 48.0,
+   "corr": 0.52
+  },
+  {
+   "station": "ULR",
+   "winter": "2017/18",
+   "days": 162,
+   "bias_pct": 14.8,
+   "rmse_mm": 66.0,
+   "corr": 0.985
+  },
+  {
+   "station": "ULR",
+   "winter": "2018/19",
+   "days": 135,
+   "bias_pct": 1.2,
+   "rmse_mm": 20.0,
+   "corr": 0.979
+  },
+  {
+   "station": "ULR",
+   "winter": "2020/21",
+   "days": 142,
+   "bias_pct": -5.9,
+   "rmse_mm": 26.0,
+   "corr": 0.988
+  },
+  {
+   "station": "DAV",
+   "winter": "2017/18",
+   "days": 147,
+   "bias_pct": -6.5,
+   "rmse_mm": 28.0,
+   "corr": 0.988
+  },
+  {
+   "station": "DAV",
+   "winter": "2018/19",
+   "days": 134,
+   "bias_pct": 11.4,
+   "rmse_mm": 47.0,
+   "corr": 0.926
+  },
+  {
+   "station": "DAV",
+   "winter": "2020/21",
+   "days": 143,
+   "bias_pct": -40.1,
+   "rmse_mm": 103.0,
+   "corr": 0.769
+  },
+  {
+   "station": "GRH",
+   "winter": "2017/18",
+   "days": 176,
+   "bias_pct": 4.2,
+   "rmse_mm": 98.0,
+   "corr": 0.98
+  },
+  {
+   "station": "GRH",
+   "winter": "2018/19",
+   "days": 151,
+   "bias_pct": 40.8,
+   "rmse_mm": 218.0,
+   "corr": 0.952
+  },
+  {
+   "station": "GRH",
+   "winter": "2020/21",
+   "days": 147,
+   "bias_pct": -22.3,
+   "rmse_mm": 189.0,
+   "corr": 0.959
+  }
+ ],
+ "density_range_kg_m3": {
+  "min": 72.78225957409612,
+  "median": 243.07772492122456,
+  "max": 448.2108407996776
+ },
+ "hysteresis": {
+  "runs": 15,
+  "events_with": 23,
+  "events_without": 27
+ },
+ "fusion_simulation": {
+  "station": "ENG",
+  "winter": "2020/21",
+  "days": 101,
+  "noise_rel": 0.05,
+  "rmse_model_kn_m2": 0.51,
+  "rmse_sensor_kn_m2": 0.046,
+  "rmse_fused_kn_m2": 0.088
+ },
+ "headline": {
+  "max_util_primary": 0.969,
+  "max_util_all": 0.969,
+  "days_ge_70_all": 199,
+  "runs": 15
+ }
+}
