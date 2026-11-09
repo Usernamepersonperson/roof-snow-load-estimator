@@ -59,7 +59,7 @@ def parse_payload(raw: bytes | str, now: datetime | None = None) -> SensorReadin
         load = standard.swe_mm_to_kn_m2(_num(obj["load_kg_m2"], "load_kg_m2"))
     elif "depth_cm" in obj:
         depth = _num(obj["depth_cm"], "depth_cm")
-        rho = density.sturm_density(depth, density.doy_from_oct1(t.tz_convert("UTC").tz_localize(None)))
+        rho = density.sturm_density(depth, density.sturm_doy(t.tz_convert("UTC").tz_localize(None)))
         load = standard.swe_mm_to_kn_m2(depth * rho / 100.0)
     else:
         raise SensorError("payload needs load_kn_m2, load_kg_m2 or depth_cm")

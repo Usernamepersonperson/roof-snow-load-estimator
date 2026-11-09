@@ -2,12 +2,30 @@
   "claim": "Open-source roof snow-load monitor: Swiss snow data in, % of design load and alerts out.",
   "data_label": "open data: MeteoSwiss SwissMetNet daily, 5 stations, winters 2017/18, 2018/19, 2020/21",
   "stats": [
-    ["96 %", "peak of design load, 1346 m, 2017/18", "amber"],
-    ["68 days", "above 70 % of design, same roof", "red"],
-    ["2.1x", "peak spread across density models", "accent"]
+    [
+      "96 %",
+      "peak of design load, 1346 m, 2017/18",
+      "amber"
+    ],
+    [
+      "68 days",
+      "above 70 % of design, same roof",
+      "red"
+    ],
+    [
+      "2.0x",
+      "peak spread across density models",
+      "accent"
+    ]
   ],
   "limit": "Not validated against measured snow water equivalent, and no real roof sensor was used.",
   "alt": "Dark chart of estimated flat-roof snow load in kN per square metre across one winter, with a dashed design-load line and shaded alert bands at 50, 70 and 90 percent of design. A shaded range shows the spread between density models.",
-  "hashtags": ["#Schneelast", "#Dach", "#Naturgefahren", "#FacilityManagement", "#OpenSource"],
-  "post": "A flat-roof hall can carry far more snow than the depth on the ground suggests, and nobody sees the number until something creaks.\n\nI built roof-snow-load-estimator, an open-source Python tool that turns open Swiss snow-station data into a roof load in kN/m2, compares it with a design load, and raises alerts at 50, 70 and 90 percent with hysteresis and a recommended action. It includes a density model for snow depth to water equivalent, rain-on-snow, an altitude transfer from station to site, and an optional MQTT input for an on-roof load cell.\n\nRun on MeteoSwiss daily data for five stations from 990 to 1980 m over three winters, the default model puts the Ulrichen roof at 96 percent of the altitude-formula design load in winter 2017/18, with 68 days above 70 percent. The biggest finding is uncertainty: the peak load differs by a factor of 2.1 depending on which density model you pick, so I show the range instead of one line.\n\nWhat is not verified: I had no measured snow water equivalent to validate against, no real roof sensor was used, and the design load uses a location offset the user has to supply.\n\nIf you manage roofs, would you trust an estimate with a visible uncertainty band, or only a sensor on the roof?\n\nCode: https://github.com/Usernamepersonperson/roof-snow-load-estimator"
+  "hashtags": [
+    "#Schneelast",
+    "#Dach",
+    "#Naturgefahren",
+    "#FacilityManagement",
+    "#OpenSource"
+  ],
+  "post": "A flat-roof hall can carry far more snow than the depth on the ground suggests, and nobody sees the number until something creaks.\n\nI built roof-snow-load-estimator, an open-source Python tool that turns open Swiss snow-station data into a roof load in kN/m2, compares it with a design load, and raises alerts at 50, 70 and 90 percent with hysteresis and a recommended action. It includes a density model for snow depth to water equivalent, rain-on-snow, an altitude transfer from station to site, and an optional MQTT input for an on-roof load cell.\n\nRun on MeteoSwiss daily data for five stations from 990 to 1980 m over three winters, the default model puts the Ulrichen roof at 96 percent of the altitude-formula design load in winter 2017/18, with 68 days above 70 percent. The biggest finding is uncertainty: the peak load differs by a factor of 2.0 depending on which density model you pick, so I show the range instead of one line.\n\nWhat is not verified: I had no measured snow water equivalent to validate against, no real roof sensor was used, and the design load uses a location offset the user has to supply.\n\nIf you manage roofs, would you trust an estimate with a visible uncertainty band, or only a sensor on the roof?\n\nCode: https://github.com/Usernamepersonperson/roof-snow-load-estimator"
 }

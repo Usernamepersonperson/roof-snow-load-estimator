@@ -16,6 +16,23 @@ def test_doy_from_oct1():
     assert density.doy_from_oct1(pd.Timestamp("2018-12-31")) == 91
 
 
+def test_sturm_doy_matches_paper_convention():
+    # Sturm et al. (2010): DOY runs from -92 (1 October) to +181 (30 June), no zero;
+    # 1 February is DOY 32 and 15 November is DOY -47.
+    assert density.sturm_doy(pd.Timestamp("2018-10-01")) == -92
+    assert density.sturm_doy(pd.Timestamp("2018-11-15")) == -47
+    assert density.sturm_doy(pd.Timestamp("2018-12-31")) == -1
+    assert density.sturm_doy(pd.Timestamp("2019-01-01")) == 1
+    assert density.sturm_doy(pd.Timestamp("2019-02-01")) == 32
+    assert density.sturm_doy(pd.Timestamp("2019-06-30")) == 181
+    assert density.sturm_doy(pd.Timestamp("2019-08-15")) == 181  # clamped outside the season
+
+
+def test_sturm_density_early_season_below_rho0():
+    # A negative DOY lowers density below rho_0, as the paper's equation implies.
+    assert density.sturm_density(50, -47) < density.STURM_ALPINE["rho_0"]
+
+
 def test_sturm_density_hand_value():
     # HS 100 cm, DOY 120: 223.7 + 373.8 * (1 - exp(-0.12 - 0.456))
     expect = 223.7 + 373.8 * (1 - math.exp(-0.12 - 0.456))

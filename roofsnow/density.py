@@ -4,9 +4,11 @@ All functions return bulk density in kg/m3 or SWE in mm (= kg/m2). 1 cm of snow 
 
 sturm_alpine : Sturm, Taras, Liston, Derksen, Jonas, Lea (2010), "Estimating snow water equivalent using
                snow depth data and climate classes", J. Hydrometeorology 11, 1380-1394.
-               rho = (rho_max - rho_0) * (1 - exp(-k1*HS - k2*DOY)) + rho_0, HS in cm, DOY = days since
-               1 October, Alpine class: rho_max 597.5, rho_0 223.7 kg/m3, k1 0.0012 /cm, k2 0.0038 /day.
-               (Coefficients transcribed from the paper's class table; check them against the paper.)
+               Eq. (6): rho = (rho_max - rho_0) * (1 - exp(-k1*HS - k2*DOY)) + rho_0, HS in cm.
+               DOY is the paper's season day: -92 on 1 October, -1 on 31 December, +1 on 1 January,
+               +181 on 30 June, no zero (paper p. 1388-1389: 1 February = 32, 15 November = -47).
+               Alpine class (Table 4, checked against the paper 2026-11-09): rho_max 0.5975,
+               rho_0 0.2237 g/cm3, k1 0.0012, k2 0.0038.
 constant     : one fixed bulk density, the simplest engineering assumption (default 300 kg/m3).
 layered      : settlement model. New snow (positive depth increments) enters as a layer at the
                temperature-dependent fresh density of Hedstrom & Pomeroy (1998), Hydrol. Process. 12,
@@ -40,7 +42,24 @@ def doy_from_oct1(date: pd.Timestamp) -> int:
     return (date.normalize() - pd.Timestamp(year=year, month=10, day=1)).days
 
 
+STURM_DOY_MIN, STURM_DOY_MAX = -92, 181
+
+
+def sturm_doy(date: pd.Timestamp) -> int:
+    """Season day as defined by Sturm et al. (2010): -92 on 1 Oct ... -1 on 31 Dec, 1 on 1 Jan ... 181 on 30 Jun.
+
+    Dates outside 1 Oct - 30 Jun are clamped to the model's range.
+    """
+    d = date.normalize()
+    if d.month >= 10:
+        doy = (d - pd.Timestamp(year=d.year + 1, month=1, day=1)).days
+    else:
+        doy = d.day_of_year
+    return int(min(max(doy, STURM_DOY_MIN), STURM_DOY_MAX))
+
+
 def sturm_density(hs_cm: float, doy: float, p: dict[str, float] | None = None) -> float:
+    """Bulk density (kg/m3) from depth (cm) and the Sturm season day `doy` (see `sturm_doy`)."""
     p = p or STURM_ALPINE
     if hs_cm is None or not math.isfinite(hs_cm) or hs_cm < 0:
         return float("nan")
@@ -60,7 +79,7 @@ def swe_constant(hs_cm: pd.Series, rho: float = 300.0) -> pd.Series:
 
 
 def swe_sturm(hs_cm: pd.Series, p: dict[str, float] | None = None) -> pd.Series:
-    doy = pd.Series([doy_from_oct1(t) for t in hs_cm.index], index=hs_cm.index)
+    doy = pd.Series([sturm_doy(t) for t in hs_cm.index], index=hs_cm.index)
     rho = pd.Series([sturm_density(h, d, p) for h, d in zip(hs_cm, doy, strict=True)], index=hs_cm.index)
     return swe_from_density(hs_cm, rho)
 

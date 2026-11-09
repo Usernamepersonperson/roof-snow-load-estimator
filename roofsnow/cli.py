@@ -85,7 +85,7 @@ def live(station: str = typer.Argument("DAV2", help="IMIS code, e.g. DAV2"),
         if hs.empty:
             raise data.DataError("no valid snow depth in the response")
         last = hs.index[-1]
-        rho = density.sturm_density(float(hs.iloc[-1]), density.doy_from_oct1(last.tz_localize(None)))
+        rho = density.sturm_density(float(hs.iloc[-1]), density.sturm_doy(last.tz_localize(None)))
         load = standard.swe_mm_to_kn_m2(float(hs.iloc[-1]) * rho / 100.0)
     except (data.DataError, ValueError) as exc:
         raise _fail(str(exc)) from exc

@@ -112,9 +112,9 @@ def density_summary(runs: list[Run]) -> dict:
 
 
 def reference_density_check() -> list[dict]:
-    """Sturm model density at fixed depth/day versus values in the published class table (sanity only)."""
+    """Sturm model density at fixed depth and season day (DOY as in Sturm et al. 2010; sanity only)."""
     out = []
-    for hs, doy in [(0.0, 0), (50.0, 90), (100.0, 120), (200.0, 180)]:
+    for hs, doy in [(0.0, -92), (50.0, -2), (100.0, 32), (200.0, 120)]:
         out.append({"hs_cm": hs, "doy": doy, "rho": round(density.sturm_density(hs, doy), 0)})
     return out
 
